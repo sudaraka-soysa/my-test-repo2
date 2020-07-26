@@ -1,0 +1,26 @@
+server:
+  port: 8085
+base-url:
+  context: /adl/et/telco/templates/celcom/api/v1.0/base-template
+
+log:
+  identifierKey: UUID
+  isDebug: true
+info:
+  app:
+    name :  base-template
+    msName : base-template
+com:
+  adl:
+    dte:
+      plugins:
+        logging:
+          enabled: true
+          level: DEBUG
+        rolling:
+          policy: size
+          size: 100000kb
+        alarming:
+          enabled: true
+        msstat:
+          enabled: true
